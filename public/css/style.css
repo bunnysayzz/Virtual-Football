@@ -1,0 +1,186 @@
+/* public/css/style.css */
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #f6d327;
+    background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
+    
+    color: white;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    height: 100%;
+}
+
+body, .popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+.pink {
+    color: rgb(200, 0, 100);
+    font-weight: bold;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    background-color: #f9c5d1;
+    background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.popup h1 {
+    text-align: center;
+}
+
+.popup h4 {
+    font-weight: 100;
+    text-align: center;
+}
+
+.popup p {
+    line-height: 20px;
+}
+
+.popup input {
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+}
+
+.popup #name {
+    margin-top: 20px;
+}
+
+.popup #btn {
+    background-color: rgb(200, 0, 100);
+    color: #fff;
+    font-weight: bold;
+}
+
+.popup #btn:hover {
+    cursor:pointer;
+}
+
+.popup small{
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #a42cb1;
+    background-image: linear-gradient(315deg, #cc54da 0%, #27333b 74%);    
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer span {
+    color: #e74c3c;
+}
+
+footer a {
+    color: #2980b9;
+    font-weight: 800;
+    -webkit-animation:colorchange 20s infinite alternate;
+    text-decoration: none;
+}
+.awesome {
+      
+    font-family: futura;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    color:#313131;
+    position: absolute;
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+    
+  }
+
+@-webkit-keyframes colorchange {
+    0% {
+      
+      color: blue;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #34495e;
+    }
+    
+    60% {
+      
+      color: blue;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }

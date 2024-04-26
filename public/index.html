@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Football | Multiplayer Game | Bunnysayzz</title> <!-- Updated title -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <!-- Popup container for user interaction -->
+    <div class="popup-container" id="popup">
+        <!-- Popup content -->
+        <div class="popup">
+            <!-- Heading of the popup -->
+            <h1>Welcome to Virtual Football</h1>
+            <!-- Subtitle of the popup -->
+            <h4>Project Developed for Computer Networks using Socket.io</h4>
+            <!-- Displaying team member names -->
+            <p style="align-items: center; justify-content: center; display: flex;">Azhar</p>
+
+            <!-- Instructions on how to play the game -->
+            <h3 style="align-items: center; justify-content: center; display: flex;">How to play?</h3>
+            <p>Move with <span class="pink">LEFT, DOWN, RIGHT, UP</span> keys and kick the ball with the <span class="pink">space</span> key.</p><br>
+            <p style="align-items: center; justify-content: center; display: flex;">To kick the ball, press the special kick button when you are near it.</p><br>
+            <p style="align-items: center; justify-content: center; display: flex;">First to 5! Then the game is reset.</p>
+            <br /><br>
+
+            <!-- Input field to enter the player's name -->
+            <p style="align-items: center; justify-content: center; display: flex;">Enter your name below and have fun!</p>
+            <input type="text" id="name" placeholder="Name" autocomplete="off"><br>
+
+            <!-- Button to start the game -->
+            <input style="color: white; background-color: coral;" type="button" id="btn" value="Play">
+            <br>
+
+            <!-- Additional information for players -->
+            <small>No one online to play with? Ask a friend to join you!</small>
+        </div>
+    </div>
+    
+    <!-- Footer section -->
+    <footer>
+        <!-- Information about who built the game -->
+        Built with <span>♥</span> by <a href="https://github.com/bunnysayzz">Bunnysayzz</a>
+    </footer>
+    
+    <!-- JavaScript libraries and custom script -->
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
