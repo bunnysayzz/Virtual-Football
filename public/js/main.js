@@ -1,4 +1,3 @@
-//public/js/main.js
 var fieldOffset = 30;
 var goalSize = {
     x: fieldOffset, 
@@ -49,17 +48,6 @@ function setup() {
     createCanvas(800, 600);
     console.log(user);
     noLoop();
-
-    // Add event listener for mouse movement
-    document.addEventListener('mousemove', function(event) {
-        // Update user position based on mouse cursor position
-        if (user) {
-            user.x = event.clientX;
-            user.y = event.clientY;
-            // Emit updated user position to the server
-            socket.emit('updateUser', user);
-        }
-    });
 }
 
 function draw() {
